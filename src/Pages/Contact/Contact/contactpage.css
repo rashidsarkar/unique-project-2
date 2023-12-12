@@ -1,0 +1,134 @@
+/* # Contact */
+.contact-area {
+  padding-top: 80px;
+}
+.contact-area .contact-form {
+  position: relative;
+  max-width: 765px;
+  width: 100%;
+}
+.contact-area .contact-form .shadow-box {
+  padding: 40px 40px 40px 40px;
+}
+.contact-area .contact-form img {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+.contact-area .contact-form h1 {
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.contact-area .contact-form h1 span {
+  color: var(--primary_color);
+}
+.contact-area .contact-form form .input-group + .input-group {
+  margin-top: 16px;
+}
+.contact-area .contact-form form .input-group textarea,
+.contact-area .contact-form form .input-group input {
+  width: 100%;
+  border: none;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: 10px;
+  padding: 17px 20px;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+}
+.contact-area .contact-form form .input-group textarea {
+  height: 145px;
+  resize: none;
+}
+.contact-area .contact-form form .input-group textarea:focus,
+.contact-area .contact-form form .input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.contact-area .contact-form form .input-group button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 16px 30px;
+}
+.contact-area .contact-infos {
+  width: 290px;
+  flex: none;
+}
+.contact-area .contact-infos h3 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+.contact-area .contact-infos .contact-details {
+  margin-bottom: 55px;
+}
+.contact-area .contact-infos .contact-details li {
+  gap: 24px;
+}
+.contact-area .contact-infos .contact-details li + li {
+  margin-top: 70px;
+}
+.contact-area .contact-infos .contact-details li .icon-box {
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+  flex: none;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.contact-area .contact-infos .contact-details li .icon-box::after,
+.contact-area .contact-infos .contact-details li .icon-box::before {
+  border-radius: 10px;
+}
+.contact-area .contact-infos .contact-details li .right span {
+  display: block;
+  color: #bcbcbc;
+  font-size: 14px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+.contact-area .contact-infos .contact-details li .right h4 {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.contact-area .contact-infos .contact-details li .right h4:last-child {
+  margin-bottom: 0;
+}
+.contact-area .social-links {
+  gap: 20px;
+}
+.contact-area .social-links li a {
+  width: 82px;
+  height: 82px;
+  display: block;
+  text-align: center;
+  line-height: 92px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: 0.3s;
+}
+.contact-area .social-links li a:hover {
+  background: #ffffff;
+  color: #0f0f0f;
+}
+.contact-area .social-links li a:before,
+.contact-area .social-links li a:after {
+  border-radius: 50%;
+}

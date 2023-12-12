@@ -1,0 +1,107 @@
+@media (max-width: 585px) {
+  .about-area .about-me-box {
+    flex-direction: column;
+  }
+  .about-area .about-me-box .img-box {
+    margin: auto;
+  }
+  .about-area .container > .row:nth-child(2) .blog-service-profile-wrap {
+    grid-template-columns: 1fr;
+  }
+  .about-area .about-credentials-wrap > .gx-row {
+    flex-wrap: wrap;
+  }
+  .about-area .about-credentials-wrap > .gx-row > * {
+    width: 100%;
+    flex: none;
+  }
+  .info-box > img {
+    width: auto;
+  }
+  .info-box.about-client-box .clients {
+    /* display: grid !important;
+        grid-template-columns: 1fr 1fr; */
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .info-box.about-client-box .clients .client-item {
+    width: calc(50% - 12px);
+    flex: none;
+  }
+  .info-box.about-contact-box h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .contact-area .contact-form h1 {
+    font-size: 34px;
+  }
+  .contact-area .contact-form .shadow-box {
+    padding: 55px 20px 30px 20px;
+  }
+  .contact-area .social-links li a {
+    width: 50px;
+    height: 50px;
+    line-height: 58px;
+    font-size: 20px;
+  }
+  .contact-area .contact-infos .contact-details li .icon-box {
+    width: 58px;
+    height: 58px;
+    line-height: 63px;
+    font-size: 25px;
+  }
+  .contact-area .contact-infos .contact-details li + li {
+    margin-top: 40px;
+  }
+
+  .projects-area .container > .row,
+  .profile-contact-credentials-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .about-area .about-image-box {
+    max-width: 370px;
+    width: 100%;
+  }
+  .about-area .about-image-box {
+    padding: 15px;
+  }
+  .about-area .about-details .about-details-inner h1,
+  .section-heading {
+    font-size: 26px;
+  }
+  .about-area .about-details .about-details-inner {
+    padding-top: 80px;
+  }
+  .projects-area .container > .section-heading {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .projects-area .col-md-8 .section-heading {
+    display: none;
+  }
+  .breadcrumb-area .breadcrumb-content .section-heading {
+    font-size: 24px;
+  }
+  .project-details-wrap .project-details-3-img,
+  .project-details-wrap .project-details-2-img {
+    height: 250px;
+  }
+  .project-details-wrap .row .col-md-6:first-child .project-details-3-img {
+    margin-bottom: 24px;
+  }
+  .project-details-wrap .project-about-2,
+  .project-details-wrap .project-about-2 .left-details {
+    padding: 30px;
+  }
+  .project-details-wrap .big-btn {
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 30px 46px;
+  }
+
+  .about-area .container > .row:nth-child(2) .blog-service-profile-wrap > div,
+  .projects-area .project-item .project-img img {
+    width: 100%;
+  }
+}
