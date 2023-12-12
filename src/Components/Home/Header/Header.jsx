@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 import { useState } from "react";
 import myResume from "./MdRashidSarkarResume-MERN Stack Developer.pdf";
+import Headroom from "react-headroom";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -54,22 +55,33 @@ function Header() {
       </li>
     </>
   );
+  const navStyle = {
+    background: "rgba(0, 0, 0, 0.5)", // black with 0.5 opacity
+  };
   return (
     <>
-      <header className="header-area">
-        <div className="container">
-          <div className="gx-row d-flex align-items-center justify-content-between">
-            <Link to={`/`} className="logo">
-              <img
-                className="mylogo"
-                src="https://i.ibb.co/Qdjzf6t/My-Logo-Logo-AI-com-removebg-preview-1.png"
-                alt="Logo"
-              />
-            </Link>
+      <Headroom
+        style={{
+          webkitTransition: "all .5s ease-in-out",
+          mozTransition: "all .5s ease-in-out",
+          oTransition: "all .5s ease-in-out",
+          transition: "all .5s ease-in-out",
+        }}
+      >
+        <header style={navStyle} className="header-area">
+          <div className="container">
+            <div className="gx-row d-flex align-items-center justify-content-between">
+              <Link to={`/`} className="logo">
+                <img
+                  className="mylogo"
+                  src="https://i.ibb.co/Qdjzf6t/My-Logo-Logo-AI-com-removebg-preview-1.png"
+                  alt="Logo"
+                />
+              </Link>
 
-            <nav className={`navbar ${isActive ? "active" : ""}`}>
-              <ul className="menu">
-                {/* <li className="active">
+              <nav className={`navbar ${isActive ? "active" : ""}`}>
+                <ul className="menu">
+                  {/* <li className="active">
                   <NavLink to={`/`}>Home</NavLink>
                 </li>
                 <li>
@@ -81,11 +93,23 @@ function Header() {
                 <li>
                   <Link>Contact</Link>
                 </li> */}
-                {navLinks}
-              </ul>
-              {/* <Link to={`/contactPage`} className="theme-btn">
+                  {navLinks}
+                </ul>
+                {/* <Link to={`/contactPage`} className="theme-btn">
                 Let's talk
               </Link> */}
+                <a
+                  href={myResume}
+                  download="RashidSarkarResume.pdf"
+                  className="theme-btn"
+                >
+                  Download Resume
+                </a>
+                {/* <a className="about-btn">
+                <img src={btnIcon} alt="resume-Button" />
+              </a> */}
+              </nav>
+
               <a
                 href={myResume}
                 download="RashidSarkarResume.pdf"
@@ -93,36 +117,25 @@ function Header() {
               >
                 Download Resume
               </a>
-              {/* <a className="about-btn">
-                <img src={btnIcon} alt="resume-Button" />
-              </a> */}
-            </nav>
 
-            <a
-              href={myResume}
-              download="RashidSarkarResume.pdf"
-              className="theme-btn"
-            >
-              Download Resume
-            </a>
-
-            {/* <div className="show-menu">
+              {/* <div className="show-menu">
               <span></span>
               <span></span>
               <span></span>
             </div> */}
 
-            <div
-              className={`show-menu ${isActive ? "active" : ""}`}
-              onClick={toggleMenu}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
+              <div
+                className={`show-menu ${isActive ? "active" : ""}`}
+                onClick={toggleMenu}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </Headroom>
     </>
   );
 }
