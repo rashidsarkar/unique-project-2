@@ -15,6 +15,7 @@ import carres from "../assets/car-res.png";
 import luxeRes1 from "../assets/luxe-res1.png";
 import "./workPage.css";
 import { Link } from "react-router-dom";
+import SocailShare from "../../../Components/socailShare/SocailShare";
 function WorksPage() {
   return (
     <>
@@ -52,11 +53,21 @@ function WorksPage() {
                         <Link
                           to={`https://github.com/rashidsarkar/Luxe-Modern-Living-Platform-server-a12-p2`}
                           type="button"
-                          className="btn btn-info"
+                          className="btn btn-warning"
                           data-mdb-ripple-init
                         >
                           Server Code
                         </Link>
+                        {/* <Link
+                          type="button"
+                          className="btn btn-info"
+                          data-mdb-ripple-init
+                        >
+                          Share Project
+                        </Link> */}
+                        <SocailShare
+                          urllink={`https://stellar-malasada-952ea2.netlify.app`}
+                        />
                       </div>
                     </div>
                     <Link
@@ -102,11 +113,21 @@ function WorksPage() {
                           <Link
                             to={`https://github.com/rashidsarkar/Educoda---Assignment-Management-System--server--a11-p2`}
                             type="button"
-                            className="btn btn-info"
+                            className="btn btn-warning"
                             data-mdb-ripple-init
                           >
                             Server Code
                           </Link>
+                          {/* <Link
+                            type="button"
+                            className="btn btn-info"
+                            data-mdb-ripple-init
+                          >
+                            Share Project
+                          </Link> */}
+                          <SocailShare
+                            urllink={`https://fanciful-dango-1d1745.netlify.app`}
+                          />
                         </div>
                       </div>
                       <Link
@@ -145,11 +166,21 @@ function WorksPage() {
                           <Link
                             to={`https://github.com/rashidsarkar/Serfix-Automotive-Server---a10-p2`}
                             type="button"
-                            className="btn btn-info"
+                            className="btn  btn-warning"
                             data-mdb-ripple-init
                           >
                             Server Code
                           </Link>
+                          {/* <Link
+                            type="button"
+                            className="btn btn-info"
+                            data-mdb-ripple-init
+                          >
+                            Share Project
+                          </Link> */}
+                          <SocailShare
+                            urllink={`https://sunny-klepon-b6a36d.netlify.app`}
+                          />
                         </div>
                       </div>
                       <Link
