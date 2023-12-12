@@ -5,10 +5,12 @@ import MySkills from "../src/Pages/MySkills/MySkills";
 import AboutPage from "../src/Pages/AboutPage/AboutPage/AboutPage";
 import WorksPage from "../src/Pages/Works/Works/WorksPage";
 import ContactPage from "../src/Pages/Contact/Contact/ContactPage";
+import NotFoundPage from "../src/Pages/errorPage/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayaout />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: "/",
