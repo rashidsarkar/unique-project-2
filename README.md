@@ -12,9 +12,9 @@ b. On the About page of my website, a chatbot is integrated to provide instant a
 
 c. Go-to-Top Button: A convenient "go to top" button appears when users scroll down, providing an easy way to navigate back to the top of the page.
 
-d. Dynamic Navbar: The navbar is not fixed on top. When users scroll down and need the navbar, they can simply scroll up slightly, and the navbar will smoothly appear, enhancing the user experience in browsing.
-e. **EmailJS:**
-   - **Description:** EmailJS integration allows the website to send emails upon form submission, ensuring I receive user information directly in your inbox.
+d. Dynamic Navbar: The navbar is not fixed on top. When users scroll down and need the navbar, they can scroll up slightly, and the navbar will smoothly appear, enhancing the user experience in browsing.
+e. EmailJS: EmailJS integration on the Contact page enables users to submit their information via a form, and I receive their details directly in my inbox.
+ 
 
 
 # Unique Technologies
