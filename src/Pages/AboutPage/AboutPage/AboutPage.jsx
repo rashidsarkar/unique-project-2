@@ -1,8 +1,10 @@
 import bg1 from "../../../assets/about/bg1.png";
 import star2 from "../../MySkills/images/star-2.png";
 import icon2 from "../../MySkills/images/icon2.png";
+import Chatbot from "../../../Components/Chatbot/Chatbot";
 
 function AboutPage() {
+  const isMobile = window.innerWidth <= 767;
   return (
     <>
       <section className="about-area">
@@ -21,7 +23,11 @@ function AboutPage() {
             </div>
 
             <div className="about-details" data-aos="zoom-in">
-              <h1 className="section-heading" data-aos="fade-up">
+              <h1
+                className={`section-heading forMobile`}
+                data-aos="fade-up"
+                style={isMobile ? { fontSize: "20px" } : {}}
+              >
                 <img src={star2} alt="Star" /> Self-summary
                 <img src={star2} alt="Star" />
               </h1>
@@ -40,7 +46,10 @@ function AboutPage() {
           </div>
 
           <div className="row mt-24">
-            <div className="col-md-6" data-aos="zoom-in">
+            <div
+              className="col-md-4 d-flex align-items-center justify-content-center  "
+              data-aos="zoom-in"
+            >
               <div className="about-edc-exp about-experience shadow-box">
                 <img src={bg1} alt="BG" className="bg-img" />
                 <h3>EXPERIENCE</h3>
@@ -55,7 +64,10 @@ function AboutPage() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-6" data-aos="zoom-in">
+            <div
+              className="col-md-4  d-flex align-items-center justify-content-center "
+              data-aos="zoom-in"
+            >
               <div className="about-edc-exp about-education shadow-box">
                 <img src={bg1} alt="BG" className="bg-img" />
                 <h3>EDUCATION</h3>
@@ -71,6 +83,9 @@ function AboutPage() {
                   </li>
                 </ul>
               </div>
+            </div>
+            <div className="col-md-4  col-sm-12 text-center" data-aos="zoom-in">
+              <Chatbot />
             </div>
           </div>
         </div>

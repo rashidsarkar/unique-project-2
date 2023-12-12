@@ -13,6 +13,7 @@ import bg1 from "../../MySkills/images/bg1.png";
 import icon2 from "../../MySkills/images/icon2.png";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
+import Chatbot from "../../../Components/Chatbot/Chatbot";
 const serviceID = "service_d0s91zk";
 const templateID = "template_sky0u9h";
 const publicKey = "HeqpLKIzL6j-ywhuC";
@@ -31,16 +32,6 @@ function ContactPage() {
       subject,
       message,
     };
-    // Send the email using EmailJS
-
-    // emailjs.sendForm(serviceID, templateID, params).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
     emailjs
       .send(serviceID, templateID, params, publicKey)
       .then((response) => {
@@ -61,6 +52,7 @@ function ContactPage() {
         console.error("Error sending email:", error);
       });
   };
+
   return (
     <>
       <section className="contact-area">

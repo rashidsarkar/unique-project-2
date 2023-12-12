@@ -105,3 +105,9 @@
     width: 100%;
   }
 }
+/* Tablet styles */
+@media only screen and (max-width: 767px) {
+  .forMobile {
+    font-size: 20px !important;
+  }
+}

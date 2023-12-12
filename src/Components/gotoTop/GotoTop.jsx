@@ -1,8 +1,8 @@
+import ScrollToTop from "react-scroll-to-top";
 function GotoTop() {
-  const gotoTop = () => {};
   return (
     <div>
-      <div className="top-btn" onClick={gotoTop}></div>
+      <ScrollToTop smooth />;
     </div>
   );
 }
